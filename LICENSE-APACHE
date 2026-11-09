@@ -5,7 +5,8 @@ The MIT notice is retained as originally supplied in LICENSE. The files
 FMDBMigrationManager/Core/FMDBMigrationManager.h and
 FMDBMigrationManager/Core/FMDBMigrationManager.m contain notices stating
 Copyright (c) 2014 Layer Inc. and are licensed under the Apache License,
-Version 2.0. The original FMDBMigrationManager 1.4.1 podspec identifies
+Version 2.0. The header's migration transaction documentation has been
+modified in this fork. The original FMDBMigrationManager 1.4.1 podspec identifies
 Blake Watters as author and https://github.com/layerhq/FMDBMigrationManager
 as its upstream source. The Apache license follows; the MIT notice does not
 remove the Apache terms or the notices in those files.

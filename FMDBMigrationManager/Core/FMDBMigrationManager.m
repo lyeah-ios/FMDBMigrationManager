@@ -4,7 +4,6 @@
 //
 //  Created by Blake Watters on 6/4/14.
 //  Copyright (c) 2014 Layer Inc. All rights reserved.
-//  Modified in this fork; see version history for implementation changes.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
