@@ -86,7 +86,7 @@ Replace `<SIMULATOR_ID>` with an available device UUID. Installing pods may upda
 
 ## Author
 
-The original library was authored by Blake Watters. This fork retains the MIT notice for zisulu, 1964990256@qq.com.
+The original library was authored by Blake Watters. This fork retains the MIT notice for zisulu, zisulwl@163.com.
 
 ## License
 
