@@ -7,11 +7,11 @@
 //
 
 @import UIKit;
-#import "LYHAppDelegate.h"
+#import "FMDemoAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([LYHAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([FMDemoAppDelegate class]));
     }
 }

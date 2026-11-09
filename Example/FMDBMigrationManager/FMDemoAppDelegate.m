@@ -1,14 +1,24 @@
 //
-//  LYHAppDelegate.m
+//  FMDemoAppDelegate.m
 //  FMDBMigrationManager
 //
 //  Created by zisulu on 03/18/2020.
 //  Copyright (c) 2020 zisulu. All rights reserved.
 //
 
-#import "LYHAppDelegate.h"
+#import "FMDemoAppDelegate.h"
 
-@implementation LYHAppDelegate
+API_AVAILABLE(ios(13.0))
+@interface FMDemoSceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
+
+@implementation FMDemoSceneDelegate
+@end
+
+@implementation FMDemoAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

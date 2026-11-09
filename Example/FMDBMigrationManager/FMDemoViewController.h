@@ -1,5 +1,5 @@
 //
-//  LYHAppDelegate.h
+//  FMDemoViewController.h
 //  FMDBMigrationManager
 //
 //  Created by zisulu on 03/18/2020.
@@ -8,8 +8,6 @@
 
 @import UIKit;
 
-@interface LYHAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface FMDemoViewController : UIViewController
 
 @end

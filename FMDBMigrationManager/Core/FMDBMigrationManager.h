@@ -4,6 +4,7 @@
 //
 //  Created by Blake Watters on 6/4/14.
 //  Copyright (c) 2014 Layer Inc. All rights reserved.
+//  Modified in this fork: migration transaction documentation updated.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -173,7 +174,7 @@
 
 /**
  @abstract Migrates the database managed by the receiver to the specified version, optionally providing progress via a block.
- @discussion Migration is performed within a transaction that is rolled back if any errors occur during migration.
+ @discussion Each migration is performed in its own transaction. A failure or cancellation rolls back the current migration, but earlier migrations remain committed.
  @param version The target version to migrate the database to. Pass `UINT64_MAX` to migrate to the latest version.
  @param progressBlock An optional block to be invoked each time a migration is applied. The block has no return value and accepts a single `NSProgress` argument. The
  progress object can be used to cancel a migration in progress.
@@ -215,8 +216,8 @@
 
 /**
  @abstract Tells the receiver to apply its changes to the given database and return a Boolean value indicating success or failure.
- @discussion The `FMDBMigrationManager` manages a transaction while migrations are being applied. Should any call to `migrateDatabase:error` return `NO`,
- then the transaction is rolled back.
+ @discussion The `FMDBMigrationManager` manages a transaction for each migration. If `migrateDatabase:error` returns `NO`,
+ the current migration is rolled back; earlier migrations remain committed.
  @param database The database on which to apply the migration.
  @param error A pointer to an error object to set should the transaction fail.
  @return A Boolean value indicating if the

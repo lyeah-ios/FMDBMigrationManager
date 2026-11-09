@@ -4,11 +4,13 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
-  - FMDBMigrationManager (2.0.0):
-    - FMDB (~> 2.7)
+  - FMDB/Core (2.7.12)
+  - FMDB/standard (2.7.12):
+    - FMDB/Core
+  - FMDBMigrationManager (3.0.0):
+    - FMDBMigrationManager/System (= 3.0.0)
+  - FMDBMigrationManager/System (3.0.0):
+    - FMDB/standard (>= 2.7.12)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -25,9 +27,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FMDBMigrationManager: d5a09b572c3ff9cb1e37b3e280b904f78fec7815
+  FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
+  FMDBMigrationManager: dc57f099c7df21ddd8f88cf26223cf551d69657f
 
-PODFILE CHECKSUM: e4721d2aaf092ed0e39b981a69871ea30f3db041
+PODFILE CHECKSUM: 2ea5638c8363a1b31ed13a51b94ff7ae61d04c02
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.16.2
